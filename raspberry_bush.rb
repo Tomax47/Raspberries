@@ -1,15 +1,16 @@
+require_relative "raspberry.rb"
 
 class RaspberryBush
-
-  require_relative "raspberry.rb"
 
   def initialize(number_of_raspberries)
 
     @raspberries = []
 
     number_of_raspberries.times do |i|
-      @raspberry = Raspberry.new(i)
-      @raspberries.append(@raspberry)
+      #@raspberry = Raspberry.new(i)
+      #@raspberries.append(@raspberry)
+      # The following, does the same function as the above!
+      @raspberries << Raspberry.new(i)
     end
 
 
@@ -19,7 +20,7 @@ class RaspberryBush
     end
 
     def clear_bush
-      @raspberries.clear()
+      @raspberries.clear
     end
 
     def raspberries_ripe?

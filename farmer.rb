@@ -17,7 +17,7 @@ class Farmer
       puts "Chill out, the fruit ain't ready yet!"
       @rasp_bush.raspberries_state
     else
-      puts "You have harvested "+number_of_raspberries.to_s+" raspberries!"
+      puts "You have harvested #{number_of_raspberries.to_s} raspberries!"
 
     end
   end

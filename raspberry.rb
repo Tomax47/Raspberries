@@ -9,9 +9,7 @@ class Raspberry
   end
 
   def grow
-    if @state != @@states.last
-      @state = @@states[@@states.index(@state) + 1]
-    end
+    @state = @@states[@@states.index(@state) + 1] unless @@states.last
   end
 
   def ripe?

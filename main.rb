@@ -1,7 +1,6 @@
-
+require_relative "farmer.rb"
+require_relative "raspberry_bush.rb"
 class Main
-  require_relative "farmer.rb"
-  require_relative "raspberry_bush.rb"
 
   Farmer.knowledge_base
   puts "Enter the commands desired or q to quit"
